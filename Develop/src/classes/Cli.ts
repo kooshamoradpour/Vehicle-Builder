@@ -402,18 +402,14 @@ class Cli {
           }
         } else if (answers.action === 'Wheelie') {
           for (let i = 0; i < this.vehicles.length; i++) {
-            console.log(this.vehicles[i].vin);
-            console.log(this.selectedVehicleVin);
-            
-            
             if (this.vehicles[i].vin === this.selectedVehicleVin) {
-              this.vehicles[i].Wheelie()
+              this.vehicles[i].wheelie()
             }
           }
         } else if (answers.action === 'Tow the car') {
           for (let i = 0; i < this.vehicles.length; i++) {
             if (this.vehicles[i].vin === this.selectedVehicleVin) {
-              this.vehicles[i].TowAction
+              // this.vehicles[i].tow()
             }
           }
         }

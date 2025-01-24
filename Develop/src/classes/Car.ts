@@ -53,10 +53,10 @@ class Car extends Vehicle {
 
     // Print details of the Car class
     console.log(`VIN: ${this.vin}`);
-    console.log(`🎨 Color: ${this.color}`);
-    console.log(`🚙 Make: ${this.make}`);
+    console.log(`Color: ${this.color}`);
+    console.log(`Make: ${this.make}`);
     console.log(`Model: ${this.model}`);
-    console.log(`🗓️ Year: ${this.year}`);
+    console.log(`Year: ${this.year}`);
     console.log(`𐄷 Weight: ${this.weight} lbs`);
     console.log(`Top Speed: ${this.topSpeed} mph`);
 

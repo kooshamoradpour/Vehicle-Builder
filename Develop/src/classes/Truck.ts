@@ -69,14 +69,14 @@ class Truck extends Vehicle {
     override printDetails(): void {
       super.printDetails();
       console.log(`VIN: ${this.vin}`);
-      console.log(`⛟ Make: ${this.make}`);
+      console.log(`Make: ${this.make}`);
       console.log(`Model: ${this.model}`);
-      console.log(`🗓️ year: ${this.year}`);
+      console.log(`year: ${this.year}`);
       console.log(`𐄷 Weight" ${this.weight}`);
       console.log(`Top Spead: ${this.topSpeed}`);
-      console.log(`🎨 color: ${this.color}`);
-      console.log(`🚚 Towing capacity: ${this.towingCapacity}`);
-      console.log(`🛞 Wheels: ${this.wheels}`);
+      console.log(`color: ${this.color}`);
+      console.log(`Towing capacity: ${this.towingCapacity}`);
+      console.log(`Wheels: ${this.wheels}`);
 
       console.log(
         `🛞 1: ${this.wheels[0].getDiameter} inch with a ${this.wheels[0].getTireBrand} tire`
