@@ -10,7 +10,6 @@ interface Driveable {
   stop(): void;
   turn(direction: string): void;
   reverse(): void;
-  wheelie():void
 }
 
 // export the Driveable interface

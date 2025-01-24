@@ -1,6 +1,5 @@
 // import Driveable interface
 import Driveable from '../interfaces/Driveable.js';
-import Motorbike from './Motorbike.js';
 
 // Vehicle class that implements Driveable interface
 class Vehicle implements Driveable {
@@ -8,13 +7,24 @@ class Vehicle implements Driveable {
   started: boolean;
   currentSpeed: number;
 
+  // options for what action can be takes on a vehicle
+  choices: string[];
   // Constructor for the Vehicle class
   constructor() {
     this.started = false;
     this.currentSpeed = 0;
-  }
-  wheelie(): void {
-    throw new Error('Method not implemented.');
+    this.choices = [
+      'Print details',
+      'Start vehicle',
+      'Accelerate 5 MPH',
+      'Decelerate 5 MPH',
+      'Stop vehicle',
+      'Turn right',
+      'Turn left',
+      'Reverse',
+      'Select or create another vehicle',
+      'Exit',
+    ]
   }
 
   // Method to print vehicle details
@@ -75,19 +85,6 @@ class Vehicle implements Driveable {
       console.log('Vehicle reversed');
     } else {
       console.log('Start the vehicle first');
-    }
-  }
-  Wheelie ():void{
-    if (this.started) {
-      console.log(this.wheelie);
-      
-    }
-  }
-  TowAction():void{
-    if(this.started){
-      console.log(`car is towing`);
-      
-      
     }
   }
 }

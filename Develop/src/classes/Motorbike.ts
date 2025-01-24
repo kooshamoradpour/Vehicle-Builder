@@ -38,6 +38,7 @@ class Motorbike extends Vehicle {
     this.year = year;
     this.weight = weight;
     this.topSpeed = topSpeed;
+    this.choices.push('Wheelie')
 
     // DONE: The constructor should check
     //  if the wheels array has 2 elements and create 2 new default Wheel objects
@@ -51,9 +52,8 @@ class Motorbike extends Vehicle {
 
   // DONE: Implement the wheelie method
   // DONE: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
-  override wheelie() {
+  wheelie(): void{
     console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
-
   }
 
 

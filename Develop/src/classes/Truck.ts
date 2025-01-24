@@ -32,6 +32,7 @@ class Truck extends Vehicle {
     topSpeed: number,
     wheels: Wheel[],
     towingCapacity: number,
+    
   ){
     super();
     this.vin = vin;
@@ -42,6 +43,8 @@ class Truck extends Vehicle {
     this.weight = weight;
     this.topSpeed = topSpeed;
     this.towingCapacity = towingCapacity;
+    this.choices.push('Tow the car')
+
 
   // DONE: The constructor should check
       // if the wheels array has 4 elements and create 4 new default Wheel objects
@@ -60,6 +63,21 @@ class Truck extends Vehicle {
     // TODO: Check if the vehicle's weight is less than or equal to the truck's towing capacity
     // TODO: If it is, log that the vehicle is being towed
     // TODO: If it is not, log that the vehicle is too heavy to be towed
+    const make = vehicle.make
+    const model = vehicle.model
+    const weight = vehicle.weight
+    if (make === undefined || model === undefined || weight === undefined) {
+      console.log('invalid vehicle');
+      return
+    }
+
+    if (weight > this.towingCapacity) {
+      console.log('vehicle is too heavy to be towed');
+      
+    }else{
+      console.log('vehicle is being towed');
+      
+    } 
   }
 
     // DONE: Override the printDetails method from the Vehicle class
